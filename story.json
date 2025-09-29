@@ -1,0 +1,227 @@
+{
+  "start": "setup",
+  "nodes": {
+    "setup": {
+      "id": "setup",
+      "text": "When you hear 'objects launched into space', what interests you most?",
+      "options": [
+        {
+          "id": "technical",
+          "text": "Precise data and growth models"
+        },
+        {
+          "id": "general",
+          "text": "Stories and impacts on daily life"
+        }
+      ],
+      "next_map": {
+        "technical": "tech_act1",
+        "general": "gen_act1"
+      }
+    },
+
+    /* --- TECHNICAL AUDIENCE BRANCH --- */
+    "tech_act1": {
+      "id": "tech_act1",
+      "text": "Looking at data up to 2019, was the launch rate stable or steadily growing?",
+      "options": [
+        { "id": "stable", "text": "Stable" },
+        { "id": "growing", "text": "Growing" }
+      ],
+      "next_map": {
+        "stable": "tech_act2_stable",
+        "growing": "tech_act2_growing"
+      }
+    },
+    "tech_act2_stable": {
+      "id": "tech_act2_stable",
+      "text": "In 2020, do you see it as a statistical anomaly or a new trend?",
+      "options": [
+        { "id": "anomaly", "text": "Anomaly" },
+        { "id": "trend", "text": "New trend" }
+      ],
+      "next_map": {
+        "anomaly": "tech_act3_anomaly",
+        "trend": "tech_act3_trend"
+      },
+      "ctas": [
+        "Think about how to anticipate sudden breaks in seemingly static markets."
+      ]
+    },
+    "tech_act2_growing": {
+      "id": "tech_act2_growing",
+      "text": "In 2020, do you see it as a statistical anomaly or a new trend?",
+      "options": [
+        { "id": "anomaly", "text": "Anomaly" },
+        { "id": "trend", "text": "New trend" }
+      ],
+      "next_map": {
+        "anomaly": "tech_act3_anomaly",
+        "trend": "tech_act3_trend"
+      },
+      "ctas": [
+        "Reflect on how to distinguish between linear and exponential growth in forecasting models."
+      ]
+    },
+    "tech_act3_anomaly": {
+      "id": "tech_act3_anomaly",
+      "text": "Who drove the growth after 2020: governments, private companies, or both?",
+      "options": [
+        { "id": "gov", "text": "Governments" },
+        { "id": "private", "text": "Private companies" },
+        { "id": "both", "text": "Both" }
+      ],
+      "next_map": {
+        "gov": "tech_cta_gov",
+        "private": "tech_cta_private",
+        "both": "tech_cta_both"
+      },
+      "ctas": [
+        "Evaluate how algorithms can detect structural changes rather than discard them as noise."
+      ]
+    },
+    "tech_act3_trend": {
+      "id": "tech_act3_trend",
+      "text": "Who drove the growth after 2020: governments, private companies, or both?",
+      "options": [
+        { "id": "gov", "text": "Governments" },
+        { "id": "private", "text": "Private companies" },
+        { "id": "both", "text": "Both" }
+      ],
+      "next_map": {
+        "gov": "tech_cta_gov",
+        "private": "tech_cta_private",
+        "both": "tech_cta_both"
+      },
+      "ctas": [
+        "Ask yourself: what weak signals are you monitoring to catch emerging trends?"
+      ]
+    },
+    "tech_cta_gov": {
+      "id": "tech_cta_gov",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Consider how public policies can influence your technological scenarios."
+      ]
+    },
+    "tech_cta_private": {
+      "id": "tech_cta_private",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Think about how private innovation can reshape business models within years."
+      ]
+    },
+    "tech_cta_both": {
+      "id": "tech_cta_both",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Ask: what strategic partnerships could accelerate your projects, as in space exploration?"
+      ]
+    },
+
+    /* --- GENERAL AUDIENCE BRANCH --- */
+    "gen_act1": {
+      "id": "gen_act1",
+      "text": "Until 2019, was space filling up slowly or quickly?",
+      "options": [
+        { "id": "slow", "text": "Slowly" },
+        { "id": "fast", "text": "Quickly" }
+      ],
+      "next_map": {
+        "slow": "gen_act2_slow",
+        "fast": "gen_act2_fast"
+      }
+    },
+    "gen_act2_slow": {
+      "id": "gen_act2_slow",
+      "text": "Was the 2020 boom an isolated case or the beginning of a new space era?",
+      "options": [
+        { "id": "isolated", "text": "Isolated case" },
+        { "id": "newera", "text": "New era" }
+      ],
+      "next_map": {
+        "isolated": "gen_act3_isolated",
+        "newera": "gen_act3_newera"
+      },
+      "ctas": [
+        "Slow changes can become revolutions without us noticing."
+      ]
+    },
+    "gen_act2_fast": {
+      "id": "gen_act2_fast",
+      "text": "Was the 2020 boom an isolated case or the beginning of a new space era?",
+      "options": [
+        { "id": "isolated", "text": "Isolated case" },
+        { "id": "newera", "text": "New era" }
+      ],
+      "next_map": {
+        "isolated": "gen_act3_isolated",
+        "newera": "gen_act3_newera"
+      },
+      "ctas": [
+        "We often overestimate a trend without imagining how much bigger it can become."
+      ]
+    },
+    "gen_act3_isolated": {
+      "id": "gen_act3_isolated",
+      "text": "Who pushed the new space race more: governments or private companies?",
+      "options": [
+        { "id": "gov", "text": "Governments" },
+        { "id": "private", "text": "Private companies" },
+        { "id": "both", "text": "Both" }
+      ],
+      "next_map": {
+        "gov": "gen_cta_gov",
+        "private": "gen_cta_private",
+        "both": "gen_cta_both"
+      },
+      "ctas": [
+        "Look around: which sudden jumps are actually deep transformations?"
+      ]
+    },
+    "gen_act3_newera": {
+      "id": "gen_act3_newera",
+      "text": "Who pushed the new space race more: governments or private companies?",
+      "options": [
+        { "id": "gov", "text": "Governments" },
+        { "id": "private", "text": "Private companies" },
+        { "id": "both", "text": "Both" }
+      ],
+      "next_map": {
+        "gov": "gen_cta_gov",
+        "private": "gen_cta_private",
+        "both": "gen_cta_both"
+      },
+      "ctas": [
+        "Think about how technology opens new eras in everyday life too."
+      ]
+    },
+    "gen_cta_gov": {
+      "id": "gen_cta_gov",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Public support is often the seed of great innovations."
+      ]
+    },
+    "gen_cta_private": {
+      "id": "gen_cta_private",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Companies we now see as normal were once pioneers breaking the rules."
+      ]
+    },
+    "gen_cta_both": {
+      "id": "gen_cta_both",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "What collaborations in your life could open possibilities you couldn’t imagine alone?"
+      ]
+    }
+  }
+}
