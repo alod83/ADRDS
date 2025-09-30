@@ -45,8 +45,7 @@ pip install -r requirements.txt
 ```
 
 ### Run the app
-```python3 -m streamlit run app.py
-```
+```python3 -m streamlit run app.py```
 
 ## 🧭 How to Use
 
