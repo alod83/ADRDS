@@ -19,14 +19,18 @@
         "general": "gen_act1"
       }
     },
-
-    /* --- TECHNICAL AUDIENCE BRANCH --- */
     "tech_act1": {
       "id": "tech_act1",
       "text": "Looking at data up to 2019, was the launch rate stable or steadily growing?",
       "options": [
-        { "id": "stable", "text": "Stable" },
-        { "id": "growing", "text": "Growing" }
+        {
+          "id": "stable",
+          "text": "Stable"
+        },
+        {
+          "id": "growing",
+          "text": "Growing"
+        }
       ],
       "next_map": {
         "stable": "tech_act2_stable",
@@ -37,8 +41,14 @@
       "id": "tech_act2_stable",
       "text": "In 2020, do you see it as a statistical anomaly or a new trend?",
       "options": [
-        { "id": "anomaly", "text": "Anomaly" },
-        { "id": "trend", "text": "New trend" }
+        {
+          "id": "anomaly",
+          "text": "Anomaly"
+        },
+        {
+          "id": "trend",
+          "text": "New trend"
+        }
       ],
       "next_map": {
         "anomaly": "tech_act3_anomaly",
@@ -52,8 +62,14 @@
       "id": "tech_act2_growing",
       "text": "In 2020, do you see it as a statistical anomaly or a new trend?",
       "options": [
-        { "id": "anomaly", "text": "Anomaly" },
-        { "id": "trend", "text": "New trend" }
+        {
+          "id": "anomaly",
+          "text": "Anomaly"
+        },
+        {
+          "id": "trend",
+          "text": "New trend"
+        }
       ],
       "next_map": {
         "anomaly": "tech_act3_anomaly",
@@ -67,9 +83,18 @@
       "id": "tech_act3_anomaly",
       "text": "Who drove the growth after 2020: governments, private companies, or both?",
       "options": [
-        { "id": "gov", "text": "Governments" },
-        { "id": "private", "text": "Private companies" },
-        { "id": "both", "text": "Both" }
+        {
+          "id": "gov",
+          "text": "Governments"
+        },
+        {
+          "id": "private",
+          "text": "Private companies"
+        },
+        {
+          "id": "both",
+          "text": "Both"
+        }
       ],
       "next_map": {
         "gov": "tech_cta_gov",
@@ -84,9 +109,18 @@
       "id": "tech_act3_trend",
       "text": "Who drove the growth after 2020: governments, private companies, or both?",
       "options": [
-        { "id": "gov", "text": "Governments" },
-        { "id": "private", "text": "Private companies" },
-        { "id": "both", "text": "Both" }
+        {
+          "id": "gov",
+          "text": "Governments"
+        },
+        {
+          "id": "private",
+          "text": "Private companies"
+        },
+        {
+          "id": "both",
+          "text": "Both"
+        }
       ],
       "next_map": {
         "gov": "tech_cta_gov",
@@ -103,7 +137,9 @@
       "terminal": true,
       "ctas": [
         "Consider how public policies can influence your technological scenarios."
-      ]
+      ],
+      "options": [],
+      "next_map": {}
     },
     "tech_cta_private": {
       "id": "tech_cta_private",
@@ -111,7 +147,9 @@
       "terminal": true,
       "ctas": [
         "Think about how private innovation can reshape business models within years."
-      ]
+      ],
+      "options": [],
+      "next_map": {}
     },
     "tech_cta_both": {
       "id": "tech_cta_both",
@@ -119,16 +157,22 @@
       "terminal": true,
       "ctas": [
         "Ask: what strategic partnerships could accelerate your projects, as in space exploration?"
-      ]
+      ],
+      "options": [],
+      "next_map": {}
     },
-
-    /* --- GENERAL AUDIENCE BRANCH --- */
     "gen_act1": {
       "id": "gen_act1",
       "text": "Until 2019, was space filling up slowly or quickly?",
       "options": [
-        { "id": "slow", "text": "Slowly" },
-        { "id": "fast", "text": "Quickly" }
+        {
+          "id": "slow",
+          "text": "Slowly"
+        },
+        {
+          "id": "fast",
+          "text": "Quickly"
+        }
       ],
       "next_map": {
         "slow": "gen_act2_slow",
@@ -139,8 +183,14 @@
       "id": "gen_act2_slow",
       "text": "Was the 2020 boom an isolated case or the beginning of a new space era?",
       "options": [
-        { "id": "isolated", "text": "Isolated case" },
-        { "id": "newera", "text": "New era" }
+        {
+          "id": "isolated",
+          "text": "Isolated case"
+        },
+        {
+          "id": "newera",
+          "text": "New era"
+        }
       ],
       "next_map": {
         "isolated": "gen_act3_isolated",
@@ -154,8 +204,14 @@
       "id": "gen_act2_fast",
       "text": "Was the 2020 boom an isolated case or the beginning of a new space era?",
       "options": [
-        { "id": "isolated", "text": "Isolated case" },
-        { "id": "newera", "text": "New era" }
+        {
+          "id": "isolated",
+          "text": "Isolated case"
+        },
+        {
+          "id": "newera",
+          "text": "New era"
+        }
       ],
       "next_map": {
         "isolated": "gen_act3_isolated",
@@ -169,9 +225,18 @@
       "id": "gen_act3_isolated",
       "text": "Who pushed the new space race more: governments or private companies?",
       "options": [
-        { "id": "gov", "text": "Governments" },
-        { "id": "private", "text": "Private companies" },
-        { "id": "both", "text": "Both" }
+        {
+          "id": "gov",
+          "text": "Governments"
+        },
+        {
+          "id": "private",
+          "text": "Private companies"
+        },
+        {
+          "id": "both",
+          "text": "Both"
+        }
       ],
       "next_map": {
         "gov": "gen_cta_gov",
@@ -186,9 +251,18 @@
       "id": "gen_act3_newera",
       "text": "Who pushed the new space race more: governments or private companies?",
       "options": [
-        { "id": "gov", "text": "Governments" },
-        { "id": "private", "text": "Private companies" },
-        { "id": "both", "text": "Both" }
+        {
+          "id": "gov",
+          "text": "Governments"
+        },
+        {
+          "id": "private",
+          "text": "Private companies"
+        },
+        {
+          "id": "both",
+          "text": "Both"
+        }
       ],
       "next_map": {
         "gov": "gen_cta_gov",
@@ -205,7 +279,9 @@
       "terminal": true,
       "ctas": [
         "Public support is often the seed of great innovations."
-      ]
+      ],
+      "options": [],
+      "next_map": {}
     },
     "gen_cta_private": {
       "id": "gen_cta_private",
@@ -213,7 +289,9 @@
       "terminal": true,
       "ctas": [
         "Companies we now see as normal were once pioneers breaking the rules."
-      ]
+      ],
+      "options": [],
+      "next_map": {}
     },
     "gen_cta_both": {
       "id": "gen_cta_both",
@@ -221,7 +299,9 @@
       "terminal": true,
       "ctas": [
         "What collaborations in your life could open possibilities you couldn’t imagine alone?"
-      ]
+      ],
+      "options": [],
+      "next_map": {}
     }
   }
 }
