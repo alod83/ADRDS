@@ -41,10 +41,10 @@ The app implements a lightweight version of the **ADRDS framework** described in
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate        # on Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt```
 
 ### Run the app
-```python3 -m streamlit run app.py
+```python3 -m streamlit run app.py```
 
 ## 🧭 How to Use
 
