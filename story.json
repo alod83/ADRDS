@@ -12,12 +12,151 @@
         {
           "id": "general",
           "text": "Stories and impacts on daily life"
+        },
+        {
+          "id": "executive",
+          "text": "Strategic risks and opportunities"
         }
       ],
       "next_map": {
         "technical": "tech_act1",
-        "general": "gen_act1"
+        "general": "gen_act1",
+        "executive": "exec_act1"
       }
+    },
+
+    "exec_act1": {
+      "id": "exec_act1",
+      "text": "For decision-makers, is the most critical aspect of launch growth risk management or opportunity capture?",
+      "options": [
+        {
+          "id": "risk",
+          "text": "Risk management"
+        },
+        {
+          "id": "opportunity",
+          "text": "Opportunity capture"
+        }
+      ],
+      "next_map": {
+        "risk": "exec_act2_risk",
+        "opportunity": "exec_act2_opportunity"
+      }
+    },
+
+    "exec_act2_risk": {
+      "id": "exec_act2_risk",
+      "text": "Which risk feels most pressing: regulatory uncertainty, supply chain fragility, or geopolitical competition?",
+      "options": [
+        {
+          "id": "regulation",
+          "text": "Regulatory uncertainty"
+        },
+        {
+          "id": "supply",
+          "text": "Supply chain fragility"
+        },
+        {
+          "id": "geo",
+          "text": "Geopolitical competition"
+        }
+      ],
+      "next_map": {
+        "regulation": "exec_cta_regulation",
+        "supply": "exec_cta_supply",
+        "geo": "exec_cta_geo"
+      },
+      "ctas": [
+        "Every strategic plan must weigh downside risks alongside growth potential."
+      ]
+    },
+
+    "exec_act2_opportunity": {
+      "id": "exec_act2_opportunity",
+      "text": "Which opportunity seems most valuable: new markets, partnerships, or cost efficiency?",
+      "options": [
+        {
+          "id": "markets",
+          "text": "New markets"
+        },
+        {
+          "id": "partnerships",
+          "text": "Partnerships"
+        },
+        {
+          "id": "efficiency",
+          "text": "Cost efficiency"
+        }
+      ],
+      "next_map": {
+        "markets": "exec_cta_markets",
+        "partnerships": "exec_cta_partnerships",
+        "efficiency": "exec_cta_efficiency"
+      },
+      "ctas": [
+        "Leaders thrive by turning disruption into opportunity."
+      ]
+    },
+
+    "exec_cta_regulation": {
+      "id": "exec_cta_regulation",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Consider proactive lobbying and compliance strategies to turn regulation into a competitive edge."
+      ],
+      "options": [],
+      "next_map": {}
+    },
+    "exec_cta_supply": {
+      "id": "exec_cta_supply",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Resilience in your supply chain could determine whether you lead or lag in new markets."
+      ],
+      "options": [],
+      "next_map": {}
+    },
+    "exec_cta_geo": {
+      "id": "exec_cta_geo",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Geopolitical shifts create both risk and first-mover advantages—how exposed are you?"
+      ],
+      "options": [],
+      "next_map": {}
+    },
+    "exec_cta_markets": {
+      "id": "exec_cta_markets",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Ask yourself: which unexplored markets could space innovation unlock for your business?"
+      ],
+      "options": [],
+      "next_map": {}
+    },
+    "exec_cta_partnerships": {
+      "id": "exec_cta_partnerships",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Strategic alliances may accelerate your timeline faster than solo investments ever could."
+      ],
+      "options": [],
+      "next_map": {}
+    },
+    "exec_cta_efficiency": {
+      "id": "exec_cta_efficiency",
+      "text": "Call To Action",
+      "terminal": true,
+      "ctas": [
+        "Operational excellence in high-cost domains often becomes a long-term differentiator."
+      ],
+      "options": [],
+      "next_map": {}
     },
     "tech_act1": {
       "id": "tech_act1",
@@ -304,4 +443,5 @@
       "next_map": {}
     }
   }
+  
 }
